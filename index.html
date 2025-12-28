@@ -60,6 +60,67 @@
             color: #4a5568;
             font-size: 1.2em;
             font-weight: 500;
+            margin-bottom: 20px;
+        }
+
+        .powered-by {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 25px;
+            padding-top: 20px;
+            border-top: 2px solid #e2e8f0;
+        }
+
+        .powered-by span {
+            color: #718096;
+            font-size: 1em;
+            font-weight: 600;
+        }
+
+        .talkpilot-logo {
+            height: 50px;
+            width: auto;
+            transition: transform 0.3s ease;
+        }
+
+        .talkpilot-logo:hover {
+            transform: scale(1.05);
+        }
+
+        .footer {
+            background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            margin-top: 40px;
+            text-align: center;
+            border: 3px solid rgba(255,255,255,0.5);
+        }
+
+        .footer-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .footer-logo {
+            height: 80px;
+            width: auto;
+        }
+
+        .footer-text {
+            color: #4a5568;
+            font-size: 1.1em;
+            font-weight: 600;
+        }
+
+        .footer-subtitle {
+            color: #718096;
+            font-size: 0.95em;
+            margin-top: 5px;
         }
 
         .stats-grid {
@@ -305,6 +366,36 @@
                 padding: 25px 20px;
             }
 
+            .talkpilot-logo {
+                height: 40px;
+            }
+
+            .powered-by {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .powered-by span {
+                font-size: 0.9em;
+            }
+
+            .footer {
+                padding: 20px;
+                margin-top: 30px;
+            }
+
+            .footer-logo {
+                height: 60px;
+            }
+
+            .footer-text {
+                font-size: 1em;
+            }
+
+            .footer-subtitle {
+                font-size: 0.85em;
+            }
+
             .stats-grid {
                 grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
                 gap: 15px;
@@ -365,6 +456,22 @@
                 font-size: 0.9em;
             }
 
+            .talkpilot-logo {
+                height: 35px;
+            }
+
+            .footer-logo {
+                height: 50px;
+            }
+
+            .footer-text {
+                font-size: 0.9em;
+            }
+
+            .footer-subtitle {
+                font-size: 0.8em;
+            }
+
             .stats-grid {
                 grid-template-columns: 1fr 1fr;
             }
@@ -418,6 +525,10 @@
         <div class="header">
             <h1>📊 דשבורד סקר שביעות רצון - חברת סקופ</h1>
             <p>ניתוח מקיף של תוצאות הסקר | דצמבר 2025</p>
+            <div class="powered-by">
+                <span>סקר בוצע על ידי:</span>
+                <img src="Frame 15.png" alt="TalkPilot Logo" class="talkpilot-logo">
+            </div>
         </div>
 
         <div class="stats-grid">
@@ -611,6 +722,18 @@
                 <tbody id="improvementTable">
                 </tbody>
             </table>
+        </div>
+
+        <div class="footer">
+            <div class="footer-content">
+                <img src="Group 7.png" alt="TalkPilot - Call Center Solutions" class="footer-logo">
+                <div class="footer-text">
+                    פתרונות מוקד טלפוני מתקדמים | TalkPilot
+                </div>
+                <div class="footer-subtitle">
+                    סקר זה בוצע על ידי צוות המומחים של TalkPilot
+                </div>
+            </div>
         </div>
     </div>
 
